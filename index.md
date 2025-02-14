@@ -5,6 +5,7 @@ layout: page
 # About Me
 
 <img src="https://caihanlin.com/caihanlin.jpg" class="floatpic">
+<img src="https://github.com/user-attachments/assets/55a01803-c29a-4a0b-a06c-b74e937625b3" class="floatpic">
 ![head](head.jpg)
 ![drum](https://github.com/user-attachments/assets/7603552c-c383-4894-99bc-f47011e6f970)
 ![微信图片_20250214160106](https://github.com/user-attachments/assets/5e0ae4a9-9f1c-41b3-af97-8a1a5ba31be0)
