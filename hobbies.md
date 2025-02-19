@@ -10,7 +10,7 @@ I’m passionate about Drums, and I have organized a band, covering JPOP and JRO
 ## Drums & My band
 
 <div class="third">
-<img src="/images/medrum1.jpg">
+<img src="/images/medrum1.png">
 <img src="/images/medrum2.jpg">
 <img src="/images/band.jpg">
 </div>
