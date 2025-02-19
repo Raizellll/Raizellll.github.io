@@ -9,7 +9,7 @@ layout: page
 
 Here is **Yiran Xu (Raizel, 徐一冉)**.<br>
 
-I am a  junior studying Computer Science at Fudan University, supervised by [Prof. Li Shang](https://cscw.fudan.edu.cn/lishang/list.htm). I am currently working on some amazing AI projects, which involve Smart eyewear, ML and RL, trying to create a personal LLM deployed on a cell phone, which is challenging but cool.<br>
+I am a  junior studying Computer Science at Fudan University, supervised by [Prof. Li Shang](https://cscw.fudan.edu.cn/lishang/list.htm). I am currently working on some amazing AI projects, which involve Smart earwear, ML and RL, trying to create a personal LLM deployed on a cell phone, which is challenging but cool.<br>
 
 If you are interested in any aspect of me, feel free to reach out to me at my email.
 
