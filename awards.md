@@ -8,8 +8,8 @@ title: Awards
 
 ## Scholarships
 
-- Sept 2024：**Fudan Undergraduate Scholarship** ($1000)
-- Sept 2023：**Fudan Undergraduate Scholarship** ($1000)
+- Sept 2024：**Fudan Undergraduate Scholarship** (￥1000)
+- Sept 2023：**Fudan Undergraduate Scholarship** (￥1000)
 
 ## Competitions
 
