@@ -30,6 +30,6 @@ Currently doing research in Fudan MemX lab. My research focuses on what a person
 
 ## News and Updates
 
-- **Jan 2025 - Feb 2025:** Enjoyed my intern in HUAWEI PaaS. Did work related to AI replication. Meet with. Met interesting and highly skilled coworkers and mentor.
+- **Jan 2025 - Feb 2025:** Enjoyed my intern in HUAWEI PaaS. Did work related to AI replication. Met interesting and highly skilled coworkers and mentor who delighted me.
 
 
