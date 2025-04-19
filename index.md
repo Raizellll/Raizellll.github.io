@@ -13,7 +13,7 @@ I am a  junior studying Computer Science at Fudan University, supervised by [Pro
 
 If you are interested in any aspect of me, feel free to reach out to me at my email.
 
-**<font color="#990000">I am actively seeking a Summer research position for 2025. If you have any information, please contact me. Thank you!</font>**
+**<font color="#990000">I am actively seeking a PhD position for fall 2026. If you have any information, please contact me. Thank you!</font>**
 
 ---
 
