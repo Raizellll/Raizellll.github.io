@@ -5,7 +5,7 @@ layout: page
 # About Me
 
 
-<img src="/images/medrum1.png" class="floatpic">
+<img src="/images/pld.jpg" class="floatpic">
 
 Here is **Yiran Xu (Raizel, 徐一冉)**.<br>
 
