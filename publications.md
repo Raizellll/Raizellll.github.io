@@ -2,25 +2,40 @@
 layout: page
 permalink: /publications/index.html
 title: Projects
+---
+
+# Projects
 
 ---
 
-## Ongoing Project
+## Ongoing Projects
 
-- Efficient and Personalized (Speech+Text)-to-Text Model for Edge Intelligence (Supervised by Dr. [Li Shang](https://cscw.fudan.edu.cn/lishang/list.htm))
+### 🔹 Deep Evaluation via Neural Activation Analysis  
+*Supervisor: [Prof. Yixin Cao](https://www.caoyixin.site/), Fudan University*  
 
-To make LLM cheaper while serving people better, this project addresses the critical need for deploying sophisticated (speech+text)-to-text models on resource-constrained edge devices. We aim to design and implement an efficient and adaptable model capable of processing both speech and text inputs, while offering user-specific personalization and high-speed inference on devices such as smartphones. Our approach involves distilling a large speech language model into an Oracle Mixture of Experts (MoE) architecture, incorporating continuous learning mechanisms for user adaptation, and applying low-rank compression techniques for optimized performance. The ultimate goal is to enable high-performance, user-centric AI experiences directly at the edge, bringing intelligent and personalized communication to the forefront of the Internet of Everything.
-
-<br>
+This project explores **how internal activations reflect model reasoning, confidence, and evaluation depth**. We aim to build a framework that interprets model behavior from its activation dynamics rather than output alone.  
+My work focuses on identifying latent modularity across Transformer layers — clustering activations to reveal functional experts and connecting these to interpretability metrics. The goal is to establish a scalable evaluation paradigm that mirrors how humans assess reasoning quality: not just by the final answer, but by the structure and depth of thought inside the model.
 
 ---
 
-## Early Project
+### 🔹 Latent Expert Discovery and Post-hoc Modularization of Transformers  
+*Summer Research with [Prof. Robert Dick](https://ece.engin.umich.edu/personnel/dick-robert), University of Michigan*  
 
-- **Huawei Technologies**, Designed cognitive prompting pipeline with three-stage code generation: problem decomposition → iterative task execution (code generation/optimization) → termination criteria verification. Trained Qwen-2.5-72B model on TACO dataset (3,500 CodeForces problems) with 20-step reasoning trajectories.
+This work investigates **how pretrained Transformers can be reorganized into interpretable, efficient expert structures without retraining**.  
+I designed activation clustering and co-activation graph methods to uncover neuron-level communities that function as latent experts. The project bridges pruning and Mixture-of-Experts frameworks, showing how modular specialization emerges naturally in large models — a step toward efficiency that preserves interpretability.
 
-- Exploring Zero-Shot classification capabilities of CLIP. Develop CLIPText for text classification and validated cross-domain robustness, optimizing training strategies to enhance feature discrimination
+---
 
-- Solution to the Francis Scott Key Bridge Collapse Impact and Baltimore Transit Optimization. Engineered a data-driven solution to mitigate Baltimore’s bridge collapse disruptions and redesign its bus network, prioritizing low-income access and system efficiency.
 
-  <br>
+## Earlier Explorations
+
+- **Edge-Level Personal LLM for Multimodal Interaction:** This project develops a **personal multimodal LLM** capable of processing both speech and text inputs on resource-constrained devices. We explore *Oracle Mixture-of-Experts (MoE)* distillation and low-rank compression to enable lightweight yet adaptive inference, aiming for high personalization and efficiency. The ultimate goal is to make AI assistants not only accessible but meaningfully *personal*, running entirely at the edge.
+
+- **Huawei Technologies (Jan–Feb 2025):** Designed a cognitive prompting pipeline for code generation with three-stage reasoning — problem decomposition, iterative refinement, and verification. Fine-tuned the *Qwen-2.5-72B* model on the *TACO* dataset (3,500 CodeForces problems) to study structured reasoning trajectories.  
+
+- **CLIP-based Zero-Shot Classification:** Adapted CLIP for cross-domain text classification (*CLIPText*), validating zero-shot transfer and enhancing feature discrimination through adaptive training objectives.  
+
+- **Urban Optimization Challenge (Francis Scott Key Bridge Collapse):** Engineered a data-driven redesign of Baltimore’s bus network following the bridge collapse, optimizing routes for accessibility, fairness, and efficiency.  
+
+---
+
