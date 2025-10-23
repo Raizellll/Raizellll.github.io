@@ -5,7 +5,7 @@ layout: page
 # About Me
 
 
-<img src="https://github.com/user-attachments/assets/7603552c-c383-4894-99bc-f47011e6f970" class="floatpic">
+<img src="/images/pld.png" class="floatpic">
 
 Here is **Yiran Xu (Raizel, 徐一冉)**.<br>
 
