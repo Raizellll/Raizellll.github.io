@@ -4,32 +4,33 @@ layout: page
 
 # About Me
 
-
 <img src="/images/pld.jpg" class="floatpic">
 
-Here is **Yiran Xu (Raizel, 徐一冉)**.<br>
+Hi! I’m **Yiran Xu (Raizel, 徐一冉)** — a senior undergraduate majoring in Computer Science at **Fudan University**, advised by [Prof. Li Shang](https://cscw.fudan.edu.cn/lishang/list.htm).
 
-I am a  junior studying Computer Science at Fudan University, supervised by [Prof. Li Shang](https://cscw.fudan.edu.cn/lishang/list.htm). I am currently working on some amazing AI projects, which involve Smart earwear, ML and RL, trying to create a personal LLM deployed on a cell phone, which is challenging but cool.<br>
+My research centers on **large language models, interpretability, and algorithmic reasoning**. I am particularly interested in how internal modularity and activation dynamics give rise to reasoning, confidence, and creativity in neural systems.  
+Previously, I worked with [**Prof. Robert Dick**](https://ece.engin.umich.edu/personnel/dick-robert) at the **University of Michigan**, studying *latent expert discovery* in pretrained Transformers, and I formerly worked in the **MemX Lab** at Fudan under Prof. Shang, exploring multimodal, memory-augmented LLM applications.  
 
-If you are interested in any aspect of me, feel free to reach out to me at my email.
+At Fudan, under [**Prof. Yixin Cao**](https://www.caoyixin.site/), I am now conducting research on *Deep Evaluation via Neural Activation Analysis*, connecting architectural modularity with activation-level interpretability to better understand model reasoning and evaluation dynamics.  
 
-**<font color="#990000">I am actively seeking a PhD position for fall 2026. If you have any information, please contact me. Thank you!</font>**
+If you share similar interests, feel free to reach out: **yiranxu22 at m.fudan.edu.cn**
+
+> **🎯 I am currently seeking a PhD position for Fall 2026** in areas related to LLM interpretability, HCI, or algorithmic AI foundations. I would deeply appreciate any related information or opportunities.
 
 ---
 
 ## Research Interests
 
-- Machine Learning
-- HCI
-- Robotics
-- AI-powered Everything
-
-Currently doing research in Fudan MemX lab. My research focuses on what a personal LLM with voice+text in and voice out can do for individual person, and I'm trying to make it not forgettable through MoE, while exploring what other interesting things it can do.
+- Interpretability and Mechanistic Analysis of LLMs  
+- Algorithmic Reasoning and Game-Theoretic Learning  
+- HCI 
+- Efficient and Modular Neural Architectures  
 
 ---
 
 ## News and Updates
 
-- **Jan 2025 - Feb 2025:** Enjoyed my intern in HUAWEI PaaS. Did work related to AI replication. Met interesting and highly skilled coworkers and mentor who delighted me.
-
+- **Jun – Sept 2025:** Summer research at the **University of Michigan** with [**Prof. Robert Dick**](https://ece.engin.umich.edu/personnel/dick-robert), exploring *latent expert discovery* and post-hoc modularization of Transformers.
+- **Jan – Feb 2025:** Interned at **Huawei PaaS**, working on AI replication and large-scale model deployment.  
+  
 
