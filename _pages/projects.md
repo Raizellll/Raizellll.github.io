@@ -1,65 +1,66 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: false   # TURN OFF CATEGORIES since you don’t need them
 horizontal: false
+description: ""
+---
+---
+title: "Personal AI Assistant with MCP & Tool Routing"
+importance: 1
+image: /assets/img/projects/hci.png
+category: fun
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+A personalized AI assistant integrating MCP, fast/slow routing, dual memory, and Gaode Maps. :contentReference[oaicite:0]{index=0}
 
-{% else %}
+**Highlights**
+- Fast vs slow task routing
+- Bike+metro navigation planning
+- Shortcut commands (“It's a new day”, “I want to process!”, etc.)
+- Multi-tool orchestration for lifestyle automation
 
-<!-- Display projects without categories -->
+---
+title: "Baltimore Transit Optimization After Bridge Collapse"
+importance: 2
+image: /assets/img/projects/baltimore.png
+category: work
+---
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+A full-stack urban mobility analysis using OSM, DBSCAN, and Dijkstra’s shortest path algorithms.
 
-  <!-- Generate cards for each project -->
+**Highlights**
+- 42% increase in travel distance post-collapse
+- Redesigned bus routes → 95% population coverage
+- 18% commute time reduction, 12% CO₂ reduction, $4.2M saved
+---
+title: "Manufacturing Optimization with Genetic Algorithms"
+importance: 3
+image: /assets/img/projects/factory.png
+category: work
+---
 
-{% if page.horizontal %}
+Adaptive multi-stage optimization integrating GA, fuzzy logic, and statistical inspection thresholds.
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+**Highlights**
+- Hypothesis-test thresholds (n=609, 370)
+- $6,609 profit per 100 units (+18% improvement)
+- 97.3% robustness via fuzzy optimization
+
+---
+title: "CLIP Zero-Shot Vision & Text Classification"
+importance: 4
+image: /assets/img/projects/clip.png   # optional
+category: work
+---
+
+A comprehensive exploration of CLIP’s zero-shot generalization across vision and text.
+
+**Highlights**
+- Evaluated CLIP on CIFAR-100, Food101, Oxford-IIIT Pets (63–80% accuracy)
+- Designed **CLIPText**, boosting AGNews from 18% → **43%**
+- Engineered task-specific prompts (PROMPT-CLIPText)
+- Analyzed fine-grained failure modes and domain generalization (>85% on anime images)
