@@ -1,6 +1,6 @@
 ---
-layout: none
-permalink: /cv/
+permalink: /CV1_YiranXu.pdf
+title: CV
+nav: true
+nav_order: 4
 ---
-
-<meta http-equiv="refresh" content="0; url=/assets/pdf/CV1_YiranXu.pdf" />
