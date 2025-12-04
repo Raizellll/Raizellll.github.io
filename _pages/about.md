@@ -58,7 +58,7 @@ I am applying to **PhD programs for Fall 2026**, aiming to build a principled un
 
 📧 **yiranxu22 [at] m.fudan.edu.cn**  
 
-- 💻 GitHub: [Raizellll](https://github.com/Raizellll)  
+- 💻 GitHub: [Raizellll](https://github.com/raizellll)  
 - 🌐 Website: [raizellll.github.io](https://raizellll.github.io)
 
 <!-- Your profile picture is handled by the profile block in the YAML header -->
