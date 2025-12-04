@@ -41,13 +41,7 @@ and validate them via causal interventions.
 
 ---
 
-## Bibliography (optional)
+## Notes  
 
-If you want to keep your Jekyll Scholar integration (not required now),  
-you can still include it below:
-
-{% include bib_search.liquid %}
-<div class="publications">
-{% bibliography %}
-</div>
-
+This page no longer uses Jekyll Scholar.  
+All bibliography and `.bib` features have been fully removed to ensure GitHub Pages builds correctly.

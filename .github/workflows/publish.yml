@@ -1,48 +1,44 @@
----
-layout: page
-title: "Publications & Writing"
-permalink: /publications/
-description: "Manuscripts, technical reports, and selected writing samples."
-nav: true
-nav_order: 3
----
+name: pages-build-and-deploy
 
-## Manuscripts
+on:
+  push:
+    branches:
+      - main
 
-### **Demand-Driven Modularity in Fine-Tuned Transformers**  
-**Yiran Xu**, Robert P. Dick  
-*Manuscript in preparation, targeting ICML 2026.*
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-A study of when and why modular structure emerges in Transformers.  
-Through multi-task fine-tuning experiments (e.g., Math vs. Sentiment), we find that  
-modularity does **not** arise from input distribution shifts but emerges only under  
-**strong functional conflict**. We also show that optimization favors **shared low-rank  
-subspaces**, and modularity is an **efficiency–accuracy tradeoff** rather than  
-a natural property of the architecture.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-- **PDF:** coming soon  
-- **Abstract:** coming soon  
-- **Slides:** coming soon  
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
 
----
+      - name: Build site
+        run: bundle exec jekyll build -d _site
 
-## Technical Reports & Writing Samples
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site/
 
-### **Activation Subspace Rubrics for Evaluating Long-Form Reasoning**  
-*Technical report draft, 2025.*
-
-An exploration of how **activation geometry** in LLMs can be mapped to  
-interpretable rubrics for reasoning quality, process correctness, and creativity.  
-We identify latent subspaces consistently correlated with “good reasoning” signals  
-and validate them via causal interventions.
-
-- **PDF:** coming soon  
-- **Code (private):** available upon request  
-
----
-
-## Notes  
-
-This page no longer uses Jekyll Scholar.  
-All bibliography and `.bib` features have been fully removed to ensure GitHub Pages builds correctly.
-
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
