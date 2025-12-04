@@ -1,0 +1,16 @@
+# Main navigation for Yiran Xu's academic website
+
+- title: about
+  url: /
+
+- title: Research
+  url: /research/
+
+- title: Publications & Writing
+  url: /publications/
+
+- title: Projects
+  url: /projects/
+
+- title: Contact
+  url: /contact/
