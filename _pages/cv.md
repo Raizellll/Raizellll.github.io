@@ -1,11 +1,6 @@
 ---
-layout: cv
-title: "CV"
+layout: none
 permalink: /cv/
-nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/CV_YiranXu.pdf
-description: ""
-toc:
-  sidebar: none
 ---
+
+<meta http-equiv="refresh" content="0; url=/assets/pdf/CV1_YiranXu.pdf" />

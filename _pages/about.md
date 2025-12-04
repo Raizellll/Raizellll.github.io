@@ -28,30 +28,37 @@ latest_posts:
 ---
 
 I am **Yiran Xu (徐一冉)**, a senior undergraduate in Computer Science at **Fudan University**.  
-My research interests lie in **mechanistic interpretability**, **latent modularity in Transformers**, and **evaluation of long-form reasoning and creativity** in large language models.
+My work centers on understanding **how large language models internally organize computation**—  
+specifically, *why* modular structures sometimes emerge, *when* they collapse into shared subspaces,  
+and *how* activation geometry encodes reasoning quality.
 
-I am currently working with **Prof. Yixin Cao** (Fudan University) and **Prof. Robert Dick** (University of Michigan) on:
-- understanding how internal activations in LLMs give rise to expert-like submodules, and  
-- using activation-space structure to evaluate reasoning quality beyond surface correctness.
+I am advised by **Prof. Yixin Cao** (Fudan University) and **Prof. Robert Dick** (University of Michigan).  
+Across both groups, I study:
 
-I plan to apply for **PhD programs starting Fall 2026**.
+- the mechanisms behind **latent experts**, modularity, and low-rank bottlenecks in Transformers  
+- the use of **activation subspaces** to evaluate long-form reasoning, creativity, and process quality  
+- how optimization dynamics (e.g., gradient flow, efficiency biases) shape representational structure  
+
+I am applying to **PhD programs for Fall 2026**, aiming to build a principled understanding of  
+**how reasoning is represented inside LLMs** and **how modularity can be encouraged or reliably induced**.
 
 ---
 
 ### Research interests
 
 - Mechanistic interpretability of Transformers and LLMs  
-- Latent experts / subnetworks and modular reasoning  
-- Evaluation of long-form reasoning and creativity (LongWriter / HelloBench / WritingBench)  
-- Causal RL and self-consistent data generation for reasoning
+- Latent modularity, functional conflict, and emergent experts  
+- Representation structure: low-rank manifolds, subspaces, causal directions  
+- Evaluation of long-form reasoning and creativity (LongWriter, HelloBench, WritingBench)  
+- Causal RL and self-consistent data generation for reasoning tasks  
 
 ---
 
 ### Contact
 
-📧 **yiranxu22 [at] m.fudan.edu.cn**
+📧 **yiranxu22 [at] m.fudan.edu.cn**  
 
 - 💻 GitHub: [Raizellll](https://github.com/Raizellll)  
 - 🌐 Website: [raizellll.github.io](https://raizellll.github.io)
 
-<!-- Your profile picture is handled by the profile block in the YAML header and prof_pic.jpg -->
+<!-- Your profile picture is handled by the profile block in the YAML header -->

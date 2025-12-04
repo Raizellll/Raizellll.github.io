@@ -646,3 +646,7 @@ jsonresume:
   - languages
   - interests
   - references
+author:
+  name: "Yiran Xu"
+  avatar: "/assets/img/profile.jpg"
+  bio: "🌱 Final-year CS student @ Fudan | LLM Interpretability & Modularity | PhD Applicant 2026"

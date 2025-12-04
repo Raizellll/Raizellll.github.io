@@ -3,71 +3,112 @@ layout: page
 title: Projects
 permalink: /projects/
 nav: true
-order: 4
+nav_order: 4
 ---
 
+# Research Infrastructure & Experiment Systems
+
+## Demand-Driven Modularity Analysis Pipeline (UMich EECS)
+**PyTorch · Distributed Training · Activation Analysis · CKA/SVD Pipeline · Causal Ablation**
+
+A full-stack experimental framework for studying **when and why modularity emerges in Transformers**.
+
+**Key Components**
+- Multi-task fine-tuning system (Math vs Sentiment, Logic vs Emotion, etc.)
+- Layer-wise representation logging for activations & hidden states
+- ΔW/W gradient-flow tracking across all training steps
+- Low-rank structure analyzer: SVD, CKA similarity curves, PCA curvature
+- Causal intervention engine: singular-direction ablation vs neuron ablation
+- Visualization suite for modularity trajectories & rank evolution  
+
+**Impact**  
+Supports the core findings behind “Demand-Driven Modularity” and enables reproducible, large-scale mechanistic experiments.
+
+---
+
+## Activation-Subspace Rubric System for Reasoning Evaluation (Fudan NLP/IR)
+**Sparse Autoencoders · Dictionary Learning · Causal Steering · Representation Geometry**
+
+A toolkit for mapping activation subspaces of LLMs into **interpretable rubrics** for evaluating reasoning quality.
+
+**Features**
+- Dictionary learning & SAE-based latent concept extraction  
+- Discovery of “reasoning quality” activation directions  
+- Causal manipulation (activation injection / suppression)  
+- Per-step evaluation on LongWriter / HelloBench  
+- Cross-model generalization tests  
+
+**Impact**  
+Moves LLM evaluation from “outcome-based” assessment to **process-aware interpretation**.
+
+---
+
+## LongWriter + HelloBench Data Generation & Evaluation Pipeline
+**LLM Generation · Long-Context Handling · JSON-Structured Evaluation · Cluster Execution**
+
+A reproducible system for generating and evaluating long-form outputs across 5 benchmark subsets.
+
+**Core Features**
+- Multi-GPU distributed inference  
+- Automatic long-context prompt assembly  
+- Structured scoring for factuality, creativity, reasoning chain quality  
+- Error detection for hallucination / formatting issues  
+- Batch monitoring & logging system  
+
+**Impact**  
+Produces high-quality long-form datasets for evaluating LLM reasoning and creativity.
+
+---
+
+# Engineering & Applied Projects
+
 ## HCI: MCP-Enhanced Smart Personal Assistant  
-**LLM + Multi-Tool Orchestration + Personalized Workflows**  
+**LLM + Multi-Tool Orchestration + Personalized Workflows**
+
 *(Screenshots & description extracted from uploaded report)* :contentReference[oaicite:1]{index=1}
 
 An intelligent assistant prototype integrating “fast path / slow path” routing, dual-channel memory, and Gaode Map MCP.
 
 **Core Features**
-- **Smart routing**:  
-  - Simple tasks → fast local LLM response  
-  - Complex tasks → multi-tool workflow (search + maps + external APIs)
-- **Personalized navigation** integrating Gaode MCP (bike + metro routing).
-- **Lifestyle automation** using natural-language “shortcut commands”:  
-  - *“It's a new day”*: Daily briefing with weather, schedule, news  
-  - *“I really wanna progress”*: Research-focused information push  
-  - *“I'm a bit tired”*: Mood-aware content recommendations
-- Demonstrates proactive, multimodal, personalized HCI design.
+- Smart task routing (local LLM vs multi-tool workflows)  
+- Personalized navigation using Gaode MCP  
+- Lifestyle automation via natural-language “shortcut commands”
 
 ---
 
-## Transportation Network Optimization After the Francis Scott Key Bridge Collapse  
+## Transportation Network Optimization After the Key Bridge Collapse  
 **Python · OpenStreetMap · DBSCAN · Dijkstra**
 
-A data-driven urban mobility optimization workflow analyzing and mitigating real-world infrastructure failure.
+Urban mobility optimization pipeline analyzing real infrastructure failure.
 
-**Key Results**
-- Modeled pre-/post-collapse traffic networks using OSM road graphs and shortest-path simulation.
-- Found **42% increase** in average travel distance and **15%** unreachable OD pairs.
-- Redesigned Baltimore’s bus system via DBSCAN-based demand clustering, improving:
-  - **Coverage**: 72% → **95%** population within 500m of a bus stop  
-  - **Commute time**: −18%  
-  - **CO₂ emissions**: −12%  
-  - **Annual cost savings**: **$4.2M**
-- Proposed optimized routes prioritizing underserved communities.
+**Highlights**
+- 42% travel distance increase detected post-collapse  
+- Bus network redesigned via clustering  
+- 18% commute time reduction & \$4.2M annual savings  
 
 ---
 
-## Multi-Stage Manufacturing Optimization (Genetic Algorithms + Fuzzy Logic)  
-**Optimization · GA · Fuzzy Inference · Statistical Quality Control**
+## Multi-Stage Manufacturing Optimization  
+**Genetic Algorithms · Fuzzy Logic · Statistical Quality Control**
 
-An adaptive decision framework for multi-stage production systems under uncertain defect rates.
+An adaptive decision-support system under uncertain defect rates.
 
 **Highlights**
-- Built hypothesis-test–driven inspection thresholds:
-  - 95% confidence rejection: **n = 609**
-  - 90% acceptance: **n = 370**
-- Developed a multi-phase profitability model achieving **$6,609 per 100 units**, outperforming baseline by **18%**.
-- Integrated **triangular fuzzy numbers** with GA to handle defect-rate uncertainty, reaching **97.3% robustness** under ±2% noise.
-- Scaled the model from **2 → 8 components**, maintaining **99.2%** consistency across stages.
+- Hypothesis-test–driven inspection thresholds  
+- 18% profitability improvement  
+- Robust to ±2% defect-rate noise  
 
 ---
 
 ## CLIP Zero-Shot Vision & Text Classification  
 **PyTorch · Contrastive Learning · Prompt Engineering**
 
-A comprehensive exploration of CLIP’s zero-shot generalization across vision and text.
+Explored CLIP’s generalization across images & NLP.
 
 **Key Contributions**
-- Evaluated CLIP on CIFAR-100, Food101, and Oxford-IIIT Pets, achieving **63–80% accuracy**, and diagnosed failures in fine-grained classes (e.g., Persian vs Maine Coon).
-- Performed systematic *prompt engineering* (hierarchical superclasses, task-structured prompts, CHiLS-style templates).
-- Designed **CLIPText**, a novel zero-shot *text* classifier reframing NLP tasks as cross-modal matching.  
-  → Boosted AGNews accuracy from **18% → 43%** using PROMPT-CLIPText without any training data.
-- Tested robustness on stylized anime images (“catgirl” domain), showing **>85% confidence** and strong semantic generalization.
-
+- 63–80% accuracy on CIFAR/Food101/Pets  
+- Novel “CLIPText” zero-shot NLP classifier  
+- Improved AGNews from 18% → 43%  
+- Robustness tested on stylized anime images  
 
 ---
