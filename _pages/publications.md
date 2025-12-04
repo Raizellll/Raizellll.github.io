@@ -41,35 +41,6 @@ and validate them via causal interventions.
 
 ---
 
-### **Representation Collapse and Low-Rank Bottlenecks in Transformers**  
-*Internal research memo, 2025.*
-
-Empirical evidence of a persistent low-rank bottleneck in final Transformer layers  
-(e.g., Layer 12 of DeBERTa-v3-base), where >95% of task variance resides in a  
-dominant subspace. Includes CKA, SVD, ΔW/W flow tracking, and causal ablations.
-
-- **PDF:** coming soon  
-
----
-
-## Selected Presentations
-
-- **Research Overview Slides (Nov 2025)**  
-  *Links pending after polishing.*  
-
----
-
-## Research Notes (optional, can be hidden for now)
-
-These are informal notes or extended analyses from ongoing projects.  
-Once your ICML manuscript is closer to submission, you can selectively expose these.
-
-- Notes on Gradient Flow and Early-Layer Feature Sufficiency  
-- Notes on Modularity vs. Functional Conflict  
-- Notes on Activation Steering for Reasoning Rubrics
-
----
-
 ## Bibliography (optional)
 
 If you want to keep your Jekyll Scholar integration (not required now),  
