@@ -23,26 +23,26 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "nav-projects",
+            },{id: "nav-publications-amp-writing",
+          title: "Publications &amp; Writing",
+          description: "Manuscripts, technical reports, and selected writing samples.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
           title: "Projects",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-research",
-          title: "Research",
+        },{id: "nav-contact",
+          title: "Contact",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/research/";
-          },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/contact/";
           },
         },{id: "post-a-post-with-plotly-js",
         
