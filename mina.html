@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Mina · Secret Calico Archive</title>
+  <meta name="description" content="Secret Easter egg page dedicated to Mina, Yiran Xu's green-eyed calico cat.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23d9823b'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23fffdf9'%3EM%3C/text%3E%3C/svg%3E">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('yiran-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mina.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="back-link" href="index.html">
+        <span aria-hidden="true">&larr;</span>
+        <span>Back to Yiran Xu</span>
+      </a>
+
+      <div class="topbar-controls">
+        <span class="archive-badge">Secret Corner · Calico Archive</span>
+        <button id="paw-trail-toggle" class="pill-toggle" type="button" aria-pressed="true">Paw Trail: On</button>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="mina-main">
+    <section class="mina-section">
+      <div class="container">
+        <div class="hero-stage">
+          <div>
+            <div class="emblem-row">
+              <!-- Custom SVG matching Mina's calico asymmetry: ginger right ear, notched black left ear, jade eyes, pink nose -->
+              <svg id="mina-emblem" class="mina-emblem" viewBox="0 0 120 104" aria-hidden="true">
+                <path d="M18 46 L14 10 L46 28 Z" fill="#d9823b" stroke="#1f2226" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M22 39 L19 19 L38 30 Z" fill="#f3b7be"/>
+                <path d="M74 28 L106 10 L104.5 19 L99.5 20.5 L104 23 L102 46 Z" fill="#23262b" stroke="#1f2226" stroke-width="2.5" stroke-linejoin="round"/>
+                <ellipse cx="60" cy="60" rx="44" ry="37" fill="#fffdf9" stroke="#1f2226" stroke-width="2.5"/>
+                <path d="M25 40 C26 24, 42 22, 46 31 C40 37, 31 41, 25 40 Z" fill="#d9823b"/>
+                <path d="M70 25 C84 22, 99 31, 98 46 C86 43, 76 34, 70 25 Z" fill="#23262b"/>
+                <ellipse cx="42" cy="56" rx="8.5" ry="7.2" fill="#4e8a6e"/>
+                <ellipse cx="78" cy="56" rx="8.5" ry="7.2" fill="#4e8a6e"/>
+                <ellipse cx="42" cy="56" rx="3.2" ry="5.5" fill="#181a1d"/>
+                <ellipse cx="78" cy="56" rx="3.2" ry="5.5" fill="#181a1d"/>
+                <circle cx="44" cy="53.5" r="1.8" fill="#ffffff"/>
+                <circle cx="80" cy="53.5" r="1.8" fill="#ffffff"/>
+                <polygon points="56,65 64,65 60,70" fill="#e8989f"/>
+                <path d="M53 73 Q56.5 76 60 72 Q63.5 76 67 73" fill="none" stroke="#6c6661" stroke-width="2" stroke-linecap="round"/>
+                <line x1="20" y1="62" x2="34" y2="64" stroke="#b9b1a7" stroke-width="1.6" stroke-linecap="round"/>
+                <line x1="18" y1="68" x2="33" y2="68" stroke="#b9b1a7" stroke-width="1.6" stroke-linecap="round"/>
+                <line x1="86" y1="64" x2="100" y2="62" stroke="#b9b1a7" stroke-width="1.6" stroke-linecap="round"/>
+                <line x1="87" y1="68" x2="102" y2="68" stroke="#b9b1a7" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+              <p class="hero-eyebrow">You Found the Easter Egg</p>
+            </div>
+
+            <h1 class="hero-title">Meet Mina</h1>
+            <p class="hero-subtitle">Chief Morale Officer &middot; Calico &middot; Emerald-Eyed Desk Supervisor</p>
+
+            <div class="calico-chips" role="group" aria-label="Choose Mina's current mood">
+              <button class="mood-chip is-active" type="button" data-mood="observing">Observing</button>
+              <button class="mood-chip" type="button" data-mood="suitcase">Suitcase Inspector</button>
+              <button class="mood-chip" type="button" data-mood="blanket">Blanket Melt</button>
+              <button class="mood-chip" type="button" data-mood="zoomies">3 AM Zoomies</button>
+            </div>
+
+            <p class="speech-bubble" aria-live="polite">
+              <span class="speech-dot" aria-hidden="true"></span>
+              <span id="mina-speech">Monitoring attention heads &amp; desk snacks from the corner.</span>
+            </p>
+
+            <div class="hero-actions">
+              <button id="pet-btn" class="btn btn-pet" type="button">
+                <span>Pet Mina</span>
+              </button>
+              <button id="boop-btn" class="btn btn-soft" type="button">
+                <span>Boop Nose</span>
+              </button>
+              <span class="pet-counter-pill" aria-live="polite">
+                <span>Pets:</span>
+                <strong id="pet-count">0</strong>
+              </span>
+            </div>
+          </div>
+
+          <div class="hero-polaroid-stage">
+            <button id="hero-polaroid" class="hero-polaroid" type="button" aria-label="Mina portrait card — click to pet Mina">
+              <div class="hero-photo-well">
+                <img src="assets/img/mina/mina_portrait.jpg" alt="Close-up studio portrait of Mina, a white-chested calico cat with green eyes">
+              </div>
+              <div class="hero-polaroid-stamp">
+                <span>MINA &middot; CALICO</span>
+                <span>#01 / 07</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mina-section">
+      <div class="container">
+        <div class="section-bar">
+          <div>
+            <p class="section-index">01 / Seven Moods</p>
+            <h2 class="section-title">The Mina Archive</h2>
+          </div>
+
+          <div class="gallery-toolbar">
+            <div class="segmented" role="group" aria-label="Gallery display mode">
+              <button id="mode-wall-btn" class="seg-btn is-active" type="button" aria-pressed="true">Polaroid Wall</button>
+              <button id="mode-stack-btn" class="seg-btn" type="button" aria-pressed="false">3D Card Stack</button>
+            </div>
+            <button id="shuffle-btn" class="btn-shuffle" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 3 21 3 21 8"></polyline>
+                <line x1="4" y1="20" x2="21" y2="3"></line>
+                <polyline points="21 16 21 21 16 21"></polyline>
+                <line x1="15" y1="15" x2="21" y2="21"></line>
+                <line x1="4" y1="4" x2="9" y2="9"></line>
+              </svg>
+              <span>Shuffle</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="polaroid-wall" class="polaroid-wall"></div>
+
+        <div id="card-stack-view" class="card-stack-view" hidden>
+          <div class="stack-stage">
+            <div id="stack-deck" class="stack-deck"></div>
+            <div class="stack-caption-box">
+              <h3 id="stack-title">Official Portrait</h3>
+              <p id="stack-caption">Calm emerald gaze monitoring every experiment log.</p>
+            </div>
+            <div class="stack-controls">
+              <button id="stack-prev-btn" class="btn-shuffle" type="button">&larr; Prev</button>
+              <span id="stack-index" class="stack-index">1 / 7</span>
+              <button id="stack-next-btn" class="btn-shuffle" type="button">Deal Next &rarr;</button>
+              <button id="stack-enlarge-btn" class="btn-shuffle" type="button">Enlarge</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mina-section">
+      <div class="container">
+        <div class="section-bar">
+          <div>
+            <p class="section-index">02 / Toy Box</p>
+            <h2 class="section-title">Catch the Laser</h2>
+          </div>
+        </div>
+
+        <div id="playpen" class="playpen-card" role="region" aria-label="Interactive laser pointer toy box with eye-tracking Mina">
+          <div class="playpen-header">
+            <span class="playpen-status">
+              <span class="laser-dot-mini" aria-hidden="true"></span>
+              <span id="laser-status">Move inside the box — Mina is locked on</span>
+            </span>
+          </div>
+
+          <svg class="playpen-cat-svg" viewBox="0 0 260 220" aria-hidden="true">
+            <!-- Shoulders & white chest -->
+            <path d="M50 210 C55 152, 85 138, 130 138 C175 138, 205 152, 210 210 Z" fill="#fffdf9" stroke="#1f2226" stroke-width="3"/>
+            <!-- Ginger right ear + inner pink ear -->
+            <path d="M44 92 L34 18 L102 56 Z" fill="#d9823b" stroke="#1f2226" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M51 79 L44 35 L86 58 Z" fill="#f3b7be"/>
+            <!-- Notched black left ear (subtle V-notch matching Mina's left ear) -->
+            <path d="M158 56 L226 18 L223 35 L214 38 L222 43 L216 92 Z" fill="#23262b" stroke="#1f2226" stroke-width="3" stroke-linejoin="round"/>
+
+            <!-- Main Head -->
+            <ellipse cx="130" cy="116" rx="86" ry="72" fill="#fffdf9" stroke="#1f2226" stroke-width="3"/>
+            <!-- Calico patches on forehead -->
+            <path d="M54 88 C58 53, 89 47, 104 61 C90 77, 70 86, 54 88 Z" fill="#d9823b"/>
+            <path d="M148 50 C178 46, 209 63, 210 92 C185 88, 162 72, 148 50 Z" fill="#23262b"/>
+
+            <!-- Open Eye-tracking Eyes -->
+            <g id="playpen-eyes-open">
+              <!-- Left eye socket + moving iris -->
+              <ellipse cx="94" cy="109" rx="19" ry="16" fill="#edf4ee" stroke="#1f2226" stroke-width="2.4"/>
+              <g id="playpen-pupil-left">
+                <circle cx="94" cy="109" r="11.5" fill="#4e8a6e"/>
+                <circle id="playpen-pupil-core-left" cx="94" cy="109" r="6.4" fill="#17191c"/>
+                <circle cx="98" cy="105" r="2.7" fill="#ffffff"/>
+              </g>
+
+              <!-- Right eye socket + moving iris -->
+              <ellipse cx="166" cy="109" rx="19" ry="16" fill="#edf4ee" stroke="#1f2226" stroke-width="2.4"/>
+              <g id="playpen-pupil-right">
+                <circle cx="166" cy="109" r="11.5" fill="#4e8a6e"/>
+                <circle id="playpen-pupil-core-right" cx="166" cy="109" r="6.4" fill="#17191c"/>
+                <circle cx="170" cy="105" r="2.7" fill="#ffffff"/>
+              </g>
+            </g>
+
+            <!-- Happy Slow-Blink Eyes (hidden unless clicked) -->
+            <g id="playpen-eyes-happy" style="display: none;">
+              <path d="M77 112 Q94 94 111 112" fill="none" stroke="#1f2226" stroke-width="3.6" stroke-linecap="round"/>
+              <path d="M149 112 Q166 94 183 112" fill="none" stroke="#1f2226" stroke-width="3.6" stroke-linecap="round"/>
+            </g>
+
+            <!-- Pink nose & smile -->
+            <polygon points="122,126 138,126 130,136" fill="#e8989f"/>
+            <path d="M116 142 Q123 148 130 140 Q137 148 144 142" fill="none" stroke="#6c6661" stroke-width="2.6" stroke-linecap="round"/>
+
+            <!-- Whiskers -->
+            <line x1="34" y1="120" x2="72" y2="124" stroke="#b9b1a7" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="30" y1="133" x2="71" y2="132" stroke="#b9b1a7" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="36" y1="145" x2="74" y2="140" stroke="#b9b1a7" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="188" y1="124" x2="226" y2="120" stroke="#b9b1a7" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="189" y1="132" x2="230" y2="133" stroke="#b9b1a7" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="186" y1="140" x2="224" y2="145" stroke="#b9b1a7" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+
+          <div id="laser-dot" class="laser-dot" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mina-footer">
+    <div class="container mina-footer-inner">
+      <span>Mina&rsquo;s Secret Corner &middot; Zero papers harmed in this sandbox</span>
+      <a href="index.html">Return to academic homepage &rarr;</a>
+    </div>
+  </footer>
+
+  <div id="mina-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+    <div class="lightbox-dialog">
+      <div class="lightbox-head">
+        <div class="lightbox-title-wrap">
+          <h3 id="lb-title" class="lightbox-title">Mina</h3>
+          <span id="lb-tag" class="lightbox-tag">#calico</span>
+        </div>
+        <button id="lb-close" class="icon-btn" type="button" aria-label="Close photo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="lightbox-stage">
+        <img id="lb-img" src="" alt="">
+      </div>
+      <div class="lightbox-foot">
+        <p id="lb-caption" class="lightbox-caption"></p>
+        <div class="lightbox-nav">
+          <button id="lb-prev" class="btn-shuffle" type="button">&larr; Prev</button>
+          <button id="lb-next" class="btn-shuffle" type="button">Next &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="mina.js"></script>
+</body>
+</html>

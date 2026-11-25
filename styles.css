@@ -909,6 +909,85 @@ button {
   color: var(--ink-subtle);
 }
 
+.footer-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mina-egg {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  padding: 4px 7px;
+  border-radius: 999px;
+  color: var(--ink-subtle);
+  opacity: 0.48;
+  transition: opacity 0.2s ease, color 0.2s ease, background-color 0.2s ease, gap 0.2s ease;
+}
+
+.mina-paw-icon {
+  flex-shrink: 0;
+  transition: transform 0.22s ease;
+}
+
+.mina-egg-label {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  transition: max-width 0.24s ease, opacity 0.2s ease;
+}
+
+.mina-egg:hover,
+.mina-egg:focus-visible {
+  opacity: 1;
+  color: #d9823b;
+  background: rgba(217, 130, 59, 0.12);
+  gap: 6px;
+}
+
+.mina-egg:hover .mina-paw-icon,
+.mina-egg:focus-visible .mina-paw-icon {
+  transform: rotate(-10deg) scale(1.08);
+}
+
+.mina-egg:hover .mina-egg-label,
+.mina-egg:focus-visible .mina-egg-label {
+  max-width: 110px;
+  opacity: 1;
+}
+
+.mina-shortcut-toast {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: #d9823b;
+  border: 1px solid rgba(217, 130, 59, 0.35);
+  box-shadow: var(--shadow-md);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.mina-shortcut-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Lightbox Modal */
 .lightbox {
   position: fixed;

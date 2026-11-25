@@ -219,4 +219,37 @@
       observer.observe(section);
     });
   }
+
+  var keyBuffer = '';
+  var toastEl = null;
+  var secretTriggered = false;
+
+  document.addEventListener('keydown', function (event) {
+    if (secretTriggered || event.ctrlKey || event.metaKey || event.altKey) return;
+    var target = event.target;
+    if (
+      target &&
+      (target.tagName === 'INPUT' ||
+        target.tagName === 'TEXTAREA' ||
+        target.isContentEditable)
+    ) {
+      return;
+    }
+    if (!event.key || event.key.length !== 1) return;
+
+    keyBuffer = (keyBuffer + event.key.toLowerCase()).slice(-4);
+    if (keyBuffer === 'mina') {
+      secretTriggered = true;
+      toastEl = document.createElement('div');
+      toastEl.className = 'mina-shortcut-toast';
+      toastEl.textContent = 'Mina heard her name...';
+      document.body.appendChild(toastEl);
+      requestAnimationFrame(function () {
+        toastEl.classList.add('is-visible');
+      });
+      setTimeout(function () {
+        window.location.href = 'mina.html';
+      }, 360);
+    }
+  });
 })();
