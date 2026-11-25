@@ -16,13 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: true
-
-      - name: Build site
-        run: bundle exec jekyll build -d _site
+      - name: Stage static site artifact
+        run: |
+          mkdir -p _site
+          cp index.html 404.html styles.css script.js .nojekyll _site/
+          cp -r assets _site/assets
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

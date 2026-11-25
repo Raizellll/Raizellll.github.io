@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found · Yiran Xu</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232C5266'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23FAF9F6'%3EY%3C/text%3E%3C/svg%3E">
+  <script>
+    (function () {
+      var path = window.location.pathname.replace(/\/+$/, '').toLowerCase();
+      var redirects = {
+        '/research': '/#research',
+        '/publications': '/#research',
+        '/projects': '/#projects',
+        '/experience': '/#experience',
+        '/contact': '/#contact',
+        '/cv': '/assets/Yiran_Xu_CV.pdf',
+        '/cv.pdf': '/assets/Yiran_Xu_CV.pdf'
+      };
+      if (redirects[path]) {
+        window.location.replace(redirects[path]);
+        return;
+      }
+      try {
+        var saved = localStorage.getItem('yiran-theme');
+        if (saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="not-found-shell">
+    <p class="eyebrow">404 · Page Not Found</p>
+    <h1>This page has moved.</h1>
+    <p class="not-found-copy">
+      The requested path is no longer active on this site. Return to the main homepage or open the current CV directly.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/">Return to Homepage</a>
+      <a class="btn btn-secondary" href="/assets/Yiran_Xu_CV.pdf" target="_blank" rel="noopener">Open CV (PDF)</a>
+    </div>
+  </main>
+</body>
+</html>

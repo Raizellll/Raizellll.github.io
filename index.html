@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yiran Xu — Boston University MSDS</title>
+  <meta name="description" content="Academic homepage of Yiran Xu, incoming M.S. in Data Science student at Boston University and AI R&D Engineer focusing on interpretable machine learning, representation analysis, and ML systems.">
+  <meta property="og:title" content="Yiran Xu — Boston University MSDS">
+  <meta property="og:description" content="Interpretable Machine Learning, Representation Analysis, and ML Systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://raizellll.github.io/">
+  <link rel="canonical" href="https://raizellll.github.io/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232C5266'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23FAF9F6'%3EY%3C/text%3E%3C/svg%3E">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('yiran-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="#about">Yiran Xu</a>
+
+      <nav class="nav-right" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a class="is-active" href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a class="nav-cv-pill" href="assets/Yiran_Xu_CV.pdf" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>CV (PDF)</span>
+        </a>
+
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button id="nav-toggle" class="icon-btn nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-drawer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+
+    <div id="nav-drawer" class="nav-drawer" aria-hidden="true">
+      <ul class="nav-drawer-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/Yiran_Xu_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content" class="main-content">
+    <section id="about" class="section hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Boston University · Spring 2027</p>
+            <h1 class="hero-title">Yiran Xu</h1>
+            <p class="hero-subtitle">Incoming M.S. in Data Science at Boston University · B.S. in Computer Science, Fudan University</p>
+
+            <div class="hero-bio">
+              <p>
+                I am an incoming graduate student in the <strong>M.S. in Data Science</strong> program at Boston University (starting January 2027), after completing my B.S. in Computer Science and Technology at Fudan University. My research and engineering work centers on <strong>Interpretable Machine Learning</strong>, <strong>Representation Analysis</strong>, and <strong>ML Systems</strong>.
+              </p>
+              <p>
+                In my undergraduate thesis with Prof. Yixin Cao in the Alex Reasoning Group at Fudan University, I combined activation patching, directional projection ablation, and linear probing to isolate late-layer attention circuits governing LLM multiple-choice adjudication. Earlier, as a visiting student in EECS at the University of Michigan advised by Prof. Robert P. Dick, I studied modularity and parameter reuse in fine-tuned Transformers. Alongside research, I work full-time as an <strong>AI R&amp;D Engineer</strong> in the EYCai department at Ernst &amp; Young (EY), building enterprise LLM platform workflows and deploying cloud AI capabilities.
+              </p>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="assets/Yiran_Xu_CV.pdf" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Curriculum Vitae (PDF)</span>
+              </a>
+
+              <button id="copy-email-btn" class="btn btn-secondary btn-copy" type="button" aria-label="Copy email address y1ran@bu.edu">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span data-copy-label>y1ran@bu.edu</span>
+              </button>
+
+              <a class="btn btn-secondary" href="https://github.com/Raizellll" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <figure class="portrait-figure">
+            <div class="portrait-frame">
+              <img src="assets/img/avatar.jpg" alt="Yiran Xu with her white poodle in front of Monet's Water Lilies painting">
+            </div>
+            <figcaption class="portrait-caption">
+              <span>Yiran Xu &amp; companion</span>
+              <span>Shanghai &rarr; Boston</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="timeline-strip">
+          <p class="timeline-heading">Timeline &amp; Milestones</p>
+          <div class="timeline-grid">
+            <article class="timeline-item">
+              <span class="timeline-date">Jan. 2027</span>
+              <p class="timeline-text">Joining <strong>Boston University</strong> for M.S. in Data Science (Spring 2027 – May 2028).</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">Jun. 2026</span>
+              <p class="timeline-text">Started full-time as <strong>AI R&amp;D Engineer</strong> at EY (EYCai Dept.) after graduating from <strong>Fudan University</strong>.</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">Jun. 2025</span>
+              <p class="timeline-text">Visiting researcher in EECS at the <strong>University of Michigan</strong> (Summer 2025).</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">Jan. 2025</span>
+              <p class="timeline-text">Algorithm Intern at <strong>Huawei Cloud PaaS Lab</strong> working on LLM reasoning &amp; code generation.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-index">01 / Research</p>
+            <h2 class="section-title">Research Experience</h2>
+          </div>
+          <p class="section-note">Mechanistic interpretability, causal ablation &amp; representation analysis</p>
+        </div>
+
+        <article class="card">
+          <div class="item-head">
+            <h3 class="item-title">Evidence-to-Symbol Adjudicators: Component and Directional Causal Mechanisms of LLM Choice Behavior</h3>
+            <span class="item-date">Sep. 2025 – May 2026</span>
+          </div>
+          <p class="item-meta">Undergraduate Researcher (B.S. Thesis) · Alex Reasoning Group, Fudan University · Advisor: Prof. Yixin Cao</p>
+
+          <p class="item-copy">
+            Combined activation patching, low-rank projection ablation (<i>h</i>&prime; = <i>h</i> &minus; <i>QQ</i><sup>T</sup><i>h</i>), linear probing, and bootstrap confidence intervals across <strong>Qwen2.5-7B-Instruct</strong> and <strong>Qwen2.5-14B-Instruct</strong> on MMLU, ARC, OpenBookQA, CommonsenseQA, and MMLU-Pro.
+          </p>
+          <p class="item-copy">
+            Identified a reproducible group of late-layer attention heads acting as shared evidence-to-symbol adjudicators across tasks (zero of 100 random-head controls exceeded selected top-8 circuits across all six core model–dataset settings). Decomposing <code>L24 attn_out</code> showed orthogonal removal of the shared answer subspace recovers <strong>47.5%</strong> (1.636 / 3.444) of full ablation drop with per-example correlation <strong>Pearson <i>r</i> = 0.833</strong> (Spearman <i>&rho;</i> = 0.785), whereas random vocabulary directions yield near-zero shifts (&minus;0.009 / 0.003). Robustness was verified under TNEWS topic classification, forced-label accuracy checks (0.942), and sequence-cloze comparisons (4.9724 vs. 1.1175 &plusmn; 2.9002).
+          </p>
+
+          <div class="metrics-grid" aria-label="Key experimental results">
+            <div class="metric-box">
+              <span class="metric-value">0 / 100</span>
+              <span class="metric-label">Random controls matching top-8 across 6 core settings</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-value">47.5%</span>
+              <span class="metric-label">Full L24 attn_out drop recovered via answer subspace</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-value">r = 0.833</span>
+              <span class="metric-label">Per-example mediation correlation (95% CI [0.790, 0.866])</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-value">7B &amp; 14B</span>
+              <span class="metric-label">Cross-scale replication across 5 reasoning benchmarks</span>
+            </div>
+          </div>
+
+          <div class="gallery-header">
+            <h4 class="gallery-title">Thesis Figures</h4>
+            <p class="gallery-hint">Click any figure to inspect in full resolution</p>
+          </div>
+
+          <div class="figures-grid">
+            <button
+              class="figure-card"
+              type="button"
+              data-lightbox-trigger
+              data-full-src="assets/img/thesis_topk_curve.png"
+              data-alt="Line plot comparing top-k discovered attention head ablation drop against 20 random control repeats on Broad-480"
+              data-title="Top-k Robustness on Broad-480"
+              data-caption="Knowledge-discovered top-k circuits (k = 1, 2, 4, 8, 16) consistently outperform random head selection, with 0 of 20 random repeats exceeding selected circuits at every k."
+            >
+              <div class="figure-mat">
+                <img src="assets/img/thesis_topk_curve.png" alt="Top-k robustness curve on Broad-480" loading="lazy">
+              </div>
+              <span class="figure-card-title">Top-k Robustness on Broad-480</span>
+              <span class="figure-card-caption">Selected top-<i>k</i> circuits vs. 20 random control repeats across <i>k</i> &isin; {1, 2, 4, 8, 16}.</span>
+            </button>
+
+            <button
+              class="figure-card"
+              type="button"
+              data-lightbox-trigger
+              data-full-src="assets/img/thesis_mediation_l24.png"
+              data-alt="Scatter plot of answer-subspace ablation margin drop versus full component ablation margin drop for L24 attention output"
+              data-title="Per-Example Directional Mediation (L24 attn_out)"
+              data-caption="Projecting out only the low-rank answer subspace in L24 attn_out strongly tracks full component ablation per example (Pearson r = 0.833, Spearman rho = 0.785)."
+            >
+              <div class="figure-mat">
+                <img src="assets/img/thesis_mediation_l24.png" alt="Per-example mediation scatter plot for L24 attn_out" loading="lazy">
+              </div>
+              <span class="figure-card-title">Per-Example Mediation (L24 attn_out)</span>
+              <span class="figure-card-caption">Answer-subspace projection tracks full ablation (<i>r</i> = 0.833, <i>&rho;</i> = 0.785).</span>
+            </button>
+
+            <button
+              class="figure-card figure-card-wide"
+              type="button"
+              data-lightbox-trigger
+              data-full-src="assets/img/thesis_cross_scale.png"
+              data-alt="Side-by-side bar charts showing knowledge-top8 ablation drop and recovery fraction for Qwen2.5-7B and 14B across five benchmarks"
+              data-title="Large-Scale Validation Across Qwen2.5 Model Scales"
+              data-caption="Top-8 evidence-to-symbol circuits reproduce strong mean margin drop and ~0.80–0.90 recovery fractions across MMLU Broad, ARC 296, OpenBookQA, CommonsenseQA, and MMLU-Pro non-math for both 7B and 14B models."
+            >
+              <div class="figure-mat">
+                <img src="assets/img/thesis_cross_scale.png" alt="Large-scale validation across Qwen2.5 7B and 14B benchmarks" loading="lazy">
+              </div>
+              <span class="figure-card-title">Large-Scale Validation Across Qwen2.5 Model Scales (7B vs. 14B)</span>
+              <span class="figure-card-caption">Mean margin drop and recovery fraction across MMLU Broad, ARC 296, OpenBookQA, CommonsenseQA, and MMLU-Pro non-math.</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="item-head">
+            <h3 class="item-title">Modularity and Parameter Reuse in Fine-Tuned Transformers</h3>
+            <span class="item-date">Jun. 2025 – Sep. 2025</span>
+          </div>
+          <p class="item-meta">Visiting Student · EECS Department, University of Michigan · Advisor: Prof. Robert P. Dick</p>
+          <p class="item-copy">
+            Conducted controlled ablation and linear probing studies on fine-tuned Transformer language models to characterize functional specialization across layers and attention heads, establishing the controlled probing and random-baseline causal evaluation methodology extended in my undergraduate thesis.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-index">02 / Background</p>
+            <h2 class="section-title">Experience, Education &amp; Skills</h2>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Industry &amp; Engineering Experience</h3>
+
+        <article class="card">
+          <div class="exp-row">
+            <div class="exp-aside">
+              <span class="exp-period">Jun. 2026 – Present</span>
+              <span class="exp-location">Ernst &amp; Young (EY)<br>Shanghai, China</span>
+            </div>
+            <div>
+              <h4 class="item-title item-title-sans">AI R&amp;D Engineer (Full-Time) · EYCai Department</h4>
+              <p class="item-meta">Enterprise LLM Platform Engineering</p>
+              <ul class="clean-list">
+                <li>Built end-to-end features across a Python backend, relational database/ORM models, object storage, and a Vue/TypeScript frontend for an enterprise LLM platform.</li>
+                <li>Integrated and deployed Alibaba Cloud AI capabilities and workflow services to deliver production AI features on the platform.</li>
+                <li>Built a self-hosted multimodal video generation feasibility prototype, profiling VRAM requirements, cold-start latency, and runtime resource bottlenecks on GPU servers.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="exp-row">
+            <div class="exp-aside">
+              <span class="exp-period">Jan. 2025 – Mar. 2025</span>
+              <span class="exp-location">Huawei Cloud PaaS Lab<br>Shanghai, China</span>
+            </div>
+            <div>
+              <h4 class="item-title item-title-sans">Algorithm Intern</h4>
+              <p class="item-meta">LLM Reasoning &amp; Code Generation · Mentor: Dr. Yuchi Ma</p>
+              <ul class="clean-list">
+                <li>Improved complex reasoning and code generation capabilities (evaluating <code>Qwen2.5-72B</code> on the TACO benchmark).</li>
+                <li>Developed process-level evaluation metrics to assess intermediate reasoning trajectories beyond binary final-answer accuracy.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <h3 class="subsection-title">Education</h3>
+
+        <div class="two-col-grid">
+          <article class="card compact-card">
+            <div class="item-head">
+              <h4 class="item-title">Boston University</h4>
+              <span class="item-date">Jan. 2027 – May 2028</span>
+            </div>
+            <p class="item-meta">M.S. in Data Science (Incoming Spring 2027)</p>
+            <p class="item-copy">Boston, MA, USA · Expected graduation May 2028.</p>
+          </article>
+
+          <article class="card compact-card">
+            <div class="item-head">
+              <h4 class="item-title">Fudan University</h4>
+              <span class="item-date">Sep. 2022 – Jun. 2026</span>
+            </div>
+            <p class="item-meta">B.S. in Computer Science and Technology (GPA: 3.5 / 4.0)</p>
+            <p class="item-copy">Shanghai, China · Coursework: Machine Learning, Natural Language Processing, Algorithms.</p>
+          </article>
+        </div>
+
+        <h3 class="subsection-title">Honors &amp; Technical Stack</h3>
+
+        <div class="two-col-grid">
+          <article class="card compact-card">
+            <h4 class="item-title item-title-sans" style="margin-bottom: 14px;">Honors &amp; Awards</h4>
+            <ul class="honor-list">
+              <li>
+                <span class="honor-name">Third Prize, China Mathematical Contest in Modeling</span>
+                <span class="honor-meta">Nov. 2024 · Top 15% National</span>
+              </li>
+              <li>
+                <span class="honor-name">Academic Excellence Scholarship, Fudan University</span>
+                <span class="honor-meta">Sep. 2024, Sep. 2023</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card compact-card">
+            <h4 class="item-title item-title-sans" style="margin-bottom: 14px;">Technical Stack</h4>
+            <div class="skill-groups">
+              <div>
+                <span class="skill-group-label">Languages</span>
+                <div class="pill-list">
+                  <span class="pill">Python</span>
+                  <span class="pill">C/C++</span>
+                  <span class="pill">SQL</span>
+                  <span class="pill">TypeScript</span>
+                </div>
+              </div>
+              <div>
+                <span class="skill-group-label">ML &amp; Research</span>
+                <div class="pill-list">
+                  <span class="pill">PyTorch</span>
+                  <span class="pill">HuggingFace Transformers</span>
+                  <span class="pill">scikit-learn</span>
+                  <span class="pill">NumPy / Pandas</span>
+                  <span class="pill">Causal Ablation</span>
+                  <span class="pill">Linear Probing</span>
+                </div>
+              </div>
+              <div>
+                <span class="skill-group-label">Systems &amp; Infrastructure</span>
+                <div class="pill-list">
+                  <span class="pill">Linux</span>
+                  <span class="pill">Docker</span>
+                  <span class="pill">Git</span>
+                  <span class="pill">CUDA</span>
+                  <span class="pill">FastAPI</span>
+                  <span class="pill">PostgreSQL</span>
+                  <span class="pill">Redis</span>
+                  <span class="pill">Celery</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-index">03 / Open Source</p>
+            <h2 class="section-title">Selected Projects</h2>
+          </div>
+          <p class="section-note">Public repositories on GitHub</p>
+        </div>
+
+        <div class="two-col-grid">
+          <article class="card compact-card project-card">
+            <div>
+              <div class="item-head">
+                <h3 class="item-title item-title-sans">ScriptVideo</h3>
+                <span class="item-date">2026</span>
+              </div>
+              <p class="item-meta">Script-to-Presentation Video Pipeline</p>
+              <p class="item-copy">
+                Converts scripts into editable, timestamp-accurate presentation videos using Qwen-powered slide planning, CosyVoice / Edge TTS word-level timestamp alignment, HTML/Chromium slide rendering with FFmpeg video assembly, and exports to editable <code>.pptx</code> decks and standalone HTML presentations.
+              </p>
+              <div class="pill-list" style="margin-top: 14px;">
+                <span class="pill">Node.js 20+</span>
+                <span class="pill">Qwen</span>
+                <span class="pill">CosyVoice / Edge TTS</span>
+                <span class="pill">Chromium</span>
+                <span class="pill">FFmpeg</span>
+                <span class="pill">Docker</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a class="repo-link" href="https://github.com/Raizellll/script-video-studio" target="_blank" rel="noopener">
+                <span>Raizellll/script-video-studio</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card compact-card project-card">
+            <div>
+              <div class="item-head">
+                <h3 class="item-title item-title-sans">Personal Agent (Buddie)</h3>
+                <span class="item-date">2025</span>
+              </div>
+              <p class="item-meta">Mobile Personal Context &amp; Voice Assistant</p>
+              <p class="item-copy">
+                Cross-platform Flutter mobile agent prototype exploring context-aware dialogue, hands-free voice workflows, meeting summaries, and daily recaps backed by Provider state management and local ObjectBox persistence.
+              </p>
+              <div class="pill-list" style="margin-top: 14px;">
+                <span class="pill">Flutter</span>
+                <span class="pill">Dart</span>
+                <span class="pill">Provider</span>
+                <span class="pill">ObjectBox</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a class="repo-link" href="https://github.com/Raizellll/Personal_Agent" target="_blank" rel="noopener">
+                <span>Raizellll/Personal_Agent</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="card contact-box">
+          <div class="contact-copy">
+            <p class="section-index">04 / Contact</p>
+            <h3>Get in Touch</h3>
+            <p>
+              Always glad to connect about interpretable ML, representation analysis, ML systems engineering, and upcoming research opportunities at Boston University starting Spring 2027.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:y1ran@bu.edu">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>y1ran@bu.edu</span>
+            </a>
+
+            <button id="copy-contact-btn" class="btn btn-secondary btn-copy" type="button" aria-label="Copy email address y1ran@bu.edu">
+              <span data-copy-label>Copy Email</span>
+            </button>
+
+            <a class="btn btn-secondary" href="assets/Yiran_Xu_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Yiran Xu</span>
+      <span>Last updated November 2026 · Built with plain HTML, CSS &amp; JS</span>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+    <div class="lightbox-dialog">
+      <div class="lightbox-top">
+        <h3 id="lightbox-title" class="lightbox-title">Figure Preview</h3>
+        <button id="lightbox-close" class="icon-btn" type="button" aria-label="Close figure preview">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="lightbox-mat">
+        <img id="lightbox-img" src="" alt="">
+      </div>
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
